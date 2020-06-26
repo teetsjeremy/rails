@@ -19,15 +19,12 @@ Listing articles page
  */
 .articles {
     color: #364544;
-    opacity: .5;
 }
 
 th {
     color: #64AD9E;
-    opacity: .5;
 }
 
 .post {
     color: #3388F6;
-    opacity: .5;
 }

@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+add comment count to artice on listing index page
+delete photo option? (separate from deleting entire post)
+stylesheet?

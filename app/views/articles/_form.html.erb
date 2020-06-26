@@ -23,15 +23,17 @@
     <%= form.label :text %><br>
     <%= form.text_area :text %>
   </p>
-
+  <div class="image">
+    <% if @article.image.present? %>
+      <%= image_tag(@article.image, style:'width:500px') %>
+    <% end %>
+  </div>
   <p>
     <%= form.label :image %>
     <%= form.file_field :image %>
   </p>
 
-  <p><%= link_to 'Destroy', article_path(:image),
-                 method: :delete,
-                 data: { confirm: 'Are you sure?' } %></p>
+
 
   <p>
     <%= form.submit %>
