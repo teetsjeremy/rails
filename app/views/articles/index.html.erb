@@ -11,7 +11,7 @@
 
     <tr>
       <td><%= article.title %></td>
-      <td><%= article.text %></td>
+      <td><%= article.text %><br>(<%= article.comments.count %>)</td>
       <td><% if article.image.present? %>
             <%= image_tag(article.image, style:'width:50px') %>
           <% end %>
