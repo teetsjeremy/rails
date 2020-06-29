@@ -11,6 +11,10 @@
   <%= image_tag(@article.image, style:'width:500px') %>
   <% end %>
 </div>
+<p>
+  <strong>User:</strong>
+  <%= @article.user %>
+</p>
 
 <h3>Comments (<%= @article.comments.count %>)</h3>
 <%= render @article.comments %>

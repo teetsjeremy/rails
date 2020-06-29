@@ -1,5 +1,6 @@
 <h1 class="articles">Listing Articles</h1>
-<%= link_to 'New article', new_article_path %>
+<%= link_to 'New article', new_article_path %><br>
+<%= image_tag(current_user.avatar_thumbnail) %>
 <table class="post">
   <tr>
     <th>Title</th>
@@ -11,7 +12,7 @@
 
     <tr>
       <td><%= article.title %></td>
-      <td><%= article.text %><br>(<%= article.comments.count %>)</td>
+      <td><%= article.text %><br><%= article.comments.count %> comments</td>
       <td><% if article.image.present? %>
             <%= image_tag(article.image, style:'width:50px') %>
           <% end %>

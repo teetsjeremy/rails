@@ -23,6 +23,15 @@ Things you may want to cover:
 
 * ...
 
-add comment count to artice on listing index page
+create users / guest login
+create user profile:
+-avatar
+-bio
+-articles created
+-articles liked
+create "invite" option for users
+create "like" option for users on articles/comments
+-link to sign up for guests who want to like/comment
+create "share" (email/social media) option for users on articles
 delete photo option? (separate from deleting entire post)
 stylesheet?

@@ -1,4 +1,15 @@
 class ArticlesController < ApplicationController
+  before_action :configure_permitted_parameters,
+                if: :devise_controller?
+
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:avatar])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:avatar])
+  end
+  before_action :authenticate_user!, except: [:show, :index]
+
   def index
     @articles = Article.all
   end
@@ -17,6 +28,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
+
 
     if @article.save
       redirect_to @article
@@ -44,6 +56,6 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :text, :comments, :image)
+    params.require(:article).permit(:title, :user, :text, :comments, :image)
   end
 end
