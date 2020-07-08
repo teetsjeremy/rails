@@ -221,11 +221,12 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
-  devise
+  devise (~> 4.7.2)
   image_magick (~> 0.1.9)
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  mini_magick (~> 4.10.1)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
   sass-rails (>= 6)
