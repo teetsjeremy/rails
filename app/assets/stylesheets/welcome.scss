@@ -1,3 +1,52 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background: image_url('white.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+
+.suadeo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 67px;
+  width: 188px;
+  color: rgba(21, 28, 28, 0.72);
+  font-family: helvetica, verdana, arial, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 72px;
+  text-align: center;
+}
+.background {
+  height: 896px;
+  width: 414px;
+  background-color: #F7FAFA;
+}
+.button-login {
+  height: 44px;
+  width: 229px;
+  box-shadow: 0 0 8px 0 rgba(143,142,142,0.2);
+  box-sizing: border-box;
+  border: 1px solid #64AD9E;
+  border-radius: 3px;
+}
+.button-create-account {
+  height: 44px;
+  width: 229px;
+  box-shadow: 0 0 8px 0 rgba(143,142,142,0.2);
+  border-radius: 3px;
+  background-color: #64AD9E;
+}
+.text {
+
+  color: #aaa9a9;
+  font-family: Avenir;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
