@@ -27,8 +27,10 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[ :id])
   end
 
+
   def create
     @article = Article.new(article_params)
+    @article.user = current_user
 
 
     if @article.save
