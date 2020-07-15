@@ -4,8 +4,12 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field text">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.label :username %><br />
+    <%= f.text_field :username, autofocus: true %>
+  </div>
+  <div class="field text">
+    <p><%= f.label :email %><br />
+    <%= f.email_field :email, autocomplete: "email" %></p>
   </div>
 
   <div class="field text">

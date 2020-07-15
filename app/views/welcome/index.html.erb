@@ -1,6 +1,6 @@
 
 <% if current_user %>
-  <h class="suadeo"> <%= current_user.email %>
+  <h class="suadeo"> <%= current_user.username %>
   <div class="text">
   <%= link_to 'Sign Out', destroy_user_session_path,
               method: :delete%>
